@@ -1,0 +1,85 @@
+============================================================
+************************ 1 *************************
+============================================================
+Model name:            Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+CPU(s):                24
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              15360K
+Hostname:	             k7.grid.imbg.org.ua
+File system:
+ext4
+tmpfs
+ext4
+ext4
+nfs
+ 
+============================================================
+************************ 2 *************************
+============================================================
+Model name:            Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+CPU(s):                24
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              15360K
+Hostname:	             k7.grid.imbg.org.ua
+File system:
+ext4
+tmpfs
+ext4
+ext4
+nfs
+ 
+============================================================
+************************ 3 *************************
+============================================================
+Model name:            Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+CPU(s):                24
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              15360K
+Hostname:	             k7.grid.imbg.org.ua
+File system:
+ext4
+tmpfs
+ext4
+ext4
+nfs
+ 
+============================================================
+************************ 4 *************************
+============================================================
+Model name:            Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+CPU(s):                24
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              15360K
+Hostname:	             k7.grid.imbg.org.ua
+File system:
+ext4
+tmpfs
+ext4
+ext4
+nfs
+ 
+============================================================
+************************ 5 *************************
+============================================================
+Model name:            Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+CPU(s):                24
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              15360K
+Hostname:	             k7.grid.imbg.org.ua
+File system:
+ext4
+tmpfs
+ext4
+ext4
+nfs
+ 

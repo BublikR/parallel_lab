@@ -1,0 +1,5 @@
+Threads	Time,sec
+   1	  145
+   2      101
+   3	  82
+   4	   

@@ -1,0 +1,30 @@
+#!/bin/bash -x
+max=100
+id=$PBS_JOBID
+[ -z "$ZMINNA" ] && (
+
+for n in `seq 1 $max`; do
+        qsub -vZMINNA=1,n=$n -lnodes=2:ppn=2 -W stageout=/mnt/work/$USER/temp.$n@plus7:/home/grid/testbed.univ.kiev.ua/tb344/lab_2/temp.$PBS_JOBID.$n ~/my_script
+done
+
+while [ -n "$(qstat | grep tb344 | grep -v $id)" ]; do
+sleep 1
+done
+cd /home/grid/testbed.univ.kiev.ua/tb344/lab_2/
+for m in `seq 1 $max`; do
+        cat temp.*.$m | grep s[0-9] >> temp_list
+done
+
+echo "Nodes     Processes" > result
+for g in s1 s2 s3 s4 s5; do
+echo "$g        $(grep -c $g temp_list)" | grep -wv '0' >> result
+done
+rm temp_list
+
+) || (
+
+cd $PBS_O_WORKDIR
+mpirun $PBS_O_WORKDIR/mpi_prog > "/mnt/work/$USER/temp.$n"
+cat $PBS_NODEFILE >> "/mnt/work/$USER/temp.$n"
+
+)
